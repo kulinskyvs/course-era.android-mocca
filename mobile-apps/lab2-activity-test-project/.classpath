@@ -5,6 +5,6 @@
 	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
 	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
 	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/moocs-lab2-acitvity-project"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/mapps-lab2-acitvity-project"/>
 	<classpathentry kind="output" path="bin/classes"/>
 </classpath>
