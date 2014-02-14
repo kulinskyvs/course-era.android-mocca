@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="course.labs.dangerousapp"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="13"
+        android:targetSdkVersion="18" />
+
+    <!-- define a permission of this application-->
+    <permission
+        android:name="course.labs.permissions.DANGEROUS_ACTIVITY"
+        android:protectionLevel="dangerous"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <!-- define the activity and mark it as its required  course.labs.permissions.DANGEROUS_ACTIVITY to
+            be granted in order to be launched-->
+        <activity
+            android:name=".DangerousActivity"
+            android:label="@string/app_name"
+            android:permission="course.labs.permissions.DANGEROUS_ACTIVITY">
+
+            <intent-filter >
+                <action android:name="course.labs.permissions.DANGEROUS_ACTIVITY"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
